@@ -1,26 +1,26 @@
 import random
 
 
-def get_exercise():
+def get_game_goal():
     return 'Find the greatest common divisor of given numbers.'
 
 
-def get_game_condition():
+def get_game_data():
     num_1 = random.randint(1, 100)
     num_2 = random.randint(1, 100)
 
     question = f'{num_1} {num_2}'
-    answer = get_nod(num_1, num_2)
+    answer = get_gcd(num_1, num_2)
 
     return (question, answer)
 
 
-def get_nod(num_1, num_2):
-    nod = 1
-    bound = min(num_1, num_2) // 2
+def get_gcd(num_1, num_2):
+    gcd = 1
+    bound = min(num_1, num_2) + 1
 
-    for i in range(2, bound):
+    for i in reversed(range(2, bound)):
         if num_1 % i == 0 and num_2 % i == 0:
-            nod = i
+            return i
 
-    return nod
+    return gcd

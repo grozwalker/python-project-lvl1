@@ -1,22 +1,26 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Hexlet's Brain games"
 authors = ["Andrei Groza"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha"
+]
+repository = "https://github.com/grozwalker/python-project-lvl1"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10"
 prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
-brain-nod = "brain_games.scripts.brain_nod:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
 

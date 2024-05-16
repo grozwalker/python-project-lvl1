@@ -1,9 +1,9 @@
-from ..games.even import get_game_condition, get_exercise
-from ..games.engine import play_game
+from ..games.even import get_game_data, get_game_goal
+from ..engine import play_game
 
 
 def main():
-    game_condition = get_game_condition
-    exercise = get_exercise()
+    game_data = get_game_data
+    game_goal = get_game_goal()
 
-    play_game(exercise, game_condition)
+    play_game(game_goal, game_data)

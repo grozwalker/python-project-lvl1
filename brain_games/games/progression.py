@@ -1,28 +1,32 @@
 import random
 
 
-def get_exercise():
+def get_game_goal():
     return 'What number is missing in the progression?'
 
 
-def get_game_condition():
+def get_game_data():
     PROGRESSION_LENGHT = 10
 
     first_elem = random.randint(0, 50)
     step = random.randint(1, 10)
-    hided_elem = random.randint(1, 10)
+    hided_elem = random.randint(0, 9)
 
-    cur = first_elem
-    progression = [str(first_elem)]
+    current = first_elem
+    progression = []
 
-    for i in range(1, PROGRESSION_LENGHT):
-        cur += step
+    for _ in range(PROGRESSION_LENGHT):
+        progression.append(str(current))
+        current += step
 
-        if i == hided_elem:
-            progression.append('..')
-            answer = cur
-        else:
-            progression.append(str(cur))
+        # if i == hided_elem:
+        #     progression.append('..')
+        #     answer = cur
+        # else:
+        #     progression.append(str(cur))
+
+    answer = progression[hided_elem]
+    progression[hided_elem] = '..'
 
     question = ' '.join(progression)
 

@@ -1,4 +1,4 @@
-from ..games.prime import get_game_data, get_game_goal
+from ..games.gcd import get_game_data, get_game_goal
 from ..engine import play_game
 
 
