@@ -7,6 +7,7 @@ def get_exercise():
 
 def get_game_condition():
     PROGRESSION_LENGHT = 10
+
     first_elem = random.randint(0, 50)
     step = random.randint(1, 10)
     hided_elem = random.randint(1, 10)
