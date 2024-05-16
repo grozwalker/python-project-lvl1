@@ -1,12 +1,16 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Hexlet's Brain games"
 authors = ["Andrei Groza"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha"
+]
+repository = "https://github.com/grozwalker/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.12"
