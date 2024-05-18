@@ -1,12 +1,11 @@
 import random
 
 
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
 def is_even(num):
     return 'yes' if num % 2 == 0 else 'no'
-
-
-def get_game_goal():
-    return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_game_data():

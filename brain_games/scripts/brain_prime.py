@@ -1,9 +1,12 @@
-from ..games.prime import get_game_data, get_game_goal
-from ..engine import play_game
+#!/usr/bin/env python3
+
+from brain_games.games import prime
+from brain_games.engine import run
 
 
 def main():
-    game_data = get_game_data
-    game_goal = get_game_goal()
+    run(prime)
 
-    play_game(game_goal, game_data)
+
+if __name__ == '__main__':
+    main()

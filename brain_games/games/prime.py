@@ -1,8 +1,7 @@
 import random
 
 
-def get_game_goal():
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -17,7 +16,6 @@ def is_prime(num):
 
 
 def get_game_data():
-
     question = random.randint(1, 100)
 
     answer = 'yes' if is_prime(question) else 'no'

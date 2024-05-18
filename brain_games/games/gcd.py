@@ -1,8 +1,7 @@
 import random
 
 
-def get_game_goal():
-    return 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_game_data():

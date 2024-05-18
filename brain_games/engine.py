@@ -1,8 +1,10 @@
 import prompt
 
 
-def play_game(game_goal, game_data):
-    ATTEMPTS = 3
+NUMBER_OF_ROUND = 3
+
+
+def run(game):
 
     print('Welcome to the Brain Games!')
 
@@ -10,10 +12,10 @@ def play_game(game_goal, game_data):
 
     print(f'Hello, {name}!')
 
-    print(game_goal)
+    print(game.DESCRIPTION)
 
-    for _ in range(ATTEMPTS):
-        question, correct_answer = game_data()
+    for _ in range(NUMBER_OF_ROUND):
+        question, correct_answer = game.get_game_data()
 
         print(f'Question: {question}')
 

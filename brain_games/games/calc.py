@@ -1,6 +1,9 @@
 import random
 
 
+DESCRIPTION = 'What is the result of the expression?'
+
+
 def get_answer(num_1, num_2, operator):
     match operator:
         case '-':
@@ -13,13 +16,10 @@ def get_answer(num_1, num_2, operator):
     return result
 
 
-def get_game_goal():
-    return 'What is the result of the expression?'
-
-
 def get_game_data():
     num_1 = random.randint(0, 100)
     num_2 = random.randint(0, 100)
+
     operators = ['-', '+', '*']
     operator = random.choice(operators)
 
