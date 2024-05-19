@@ -15,17 +15,17 @@ def run(game):
     print(game.DESCRIPTION)
 
     for _ in range(NUMBER_OF_ROUND):
-        question, correct_answer = game.get_game_data()
+        question, expected_answer = game.get_game_data()
 
         print(f'Question: {question}')
 
         user_answer = prompt.string('Your answer: ')
 
-        if user_answer == str(correct_answer):
+        if user_answer == str(expected_answer):
             print('Correct!')
         else:
             print(f"'{user_answer}' is wrong answer ;(. \
-Correct answer was '{correct_answer}'.")
+Correct answer was '{expected_answer}'.")
             print(f"Let's try again, {name}!")
             return
 
